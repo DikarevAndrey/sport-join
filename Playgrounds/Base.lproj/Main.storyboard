@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,47 +21,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xuM-ZW-q3p">
-                                <rect key="frame" x="61" y="234" width="253" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bDX-nf-DMR">
+                                <rect key="frame" x="87.5" y="207" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="RAY-t2-XLs"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDX-nf-DMR">
-                                <rect key="frame" x="61" y="277" width="253" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpf-OB-DPn">
-                                <rect key="frame" x="90" y="417" width="194" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpf-OB-DPn">
+                                <rect key="frame" x="104" y="320" width="166" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Зарегистрироваться"/>
                                 <connections>
                                     <segue destination="drC-Ca-k5w" kind="show" id="FKa-eB-dT2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Играем сегодня?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQV-8Z-XhM">
-                                <rect key="frame" x="38" y="77" width="298" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Играем сегодня?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQV-8Z-XhM">
+                                <rect key="frame" x="100" y="80" width="174" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xU5-BD-6MD">
-                                <rect key="frame" x="156" y="322" width="62" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xU5-BD-6MD">
+                                <rect key="frame" x="162.5" y="257" width="49" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Войти"/>
                                 <connections>
                                     <segue destination="Rk8-vg-zyc" kind="show" id="EKh-tx-nCl"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xuM-ZW-q3p">
+                                <rect key="frame" x="87.5" y="166.5" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="w7r-yX-0Wg"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="username"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.9887131294" blue="0.76495803439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bDX-nf-DMR" firstAttribute="height" secondItem="xuM-ZW-q3p" secondAttribute="height" id="0er-dJ-mH5"/>
+                            <constraint firstItem="xuM-ZW-q3p" firstAttribute="top" secondItem="dQV-8Z-XhM" secondAttribute="bottom" constant="60" id="6mM-7v-Wfy"/>
+                            <constraint firstItem="dQV-8Z-XhM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="83c-83-fbQ"/>
+                            <constraint firstItem="xU5-BD-6MD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ADg-gh-Jug"/>
+                            <constraint firstItem="gpf-OB-DPn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Am3-1a-UcA"/>
+                            <constraint firstItem="bDX-nf-DMR" firstAttribute="width" secondItem="xuM-ZW-q3p" secondAttribute="width" id="Jdv-aG-0jZ"/>
+                            <constraint firstItem="xuM-ZW-q3p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mhd-sb-E5o"/>
+                            <constraint firstItem="xU5-BD-6MD" firstAttribute="top" secondItem="bDX-nf-DMR" secondAttribute="bottom" constant="20" id="ToI-jj-7vQ"/>
+                            <constraint firstItem="bDX-nf-DMR" firstAttribute="top" secondItem="xuM-ZW-q3p" secondAttribute="bottom" constant="10" id="a4D-OZ-tF0"/>
+                            <constraint firstItem="dQV-8Z-XhM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="l7O-WF-WBW"/>
+                            <constraint firstItem="gpf-OB-DPn" firstAttribute="top" secondItem="xU5-BD-6MD" secondAttribute="bottom" constant="30" id="nSr-sw-RG8"/>
+                            <constraint firstItem="bDX-nf-DMR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s93-1A-0Zr"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
