@@ -62,7 +62,7 @@
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.9887131294" blue="0.76495803439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.98764199018478394" blue="0.76592534780502319" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bDX-nf-DMR" firstAttribute="height" secondItem="xuM-ZW-q3p" secondAttribute="height" id="0er-dJ-mH5"/>
                             <constraint firstItem="xuM-ZW-q3p" firstAttribute="top" secondItem="dQV-8Z-XhM" secondAttribute="bottom" constant="60" id="6mM-7v-Wfy"/>
@@ -94,12 +94,12 @@
                     <view key="view" contentMode="scaleToFill" id="uLz-YM-yzS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.98764199019999999" blue="0.76592534779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jea-WE-oGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1064" y="-274"/>
+            <point key="canvasLocation" x="1062" y="-281"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kK7-5O-hri">
@@ -112,12 +112,12 @@
                     <view key="view" contentMode="scaleToFill" id="aSj-kD-uY5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.98764199019999999" blue="0.76592534779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyn-rz-mH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1063" y="437"/>
+            <point key="canvasLocation" x="1063" y="564"/>
         </scene>
     </scenes>
 </document>
